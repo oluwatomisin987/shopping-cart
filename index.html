@@ -74,13 +74,13 @@
         </div>
 
         <div class="cart-avatar-div">
-          <div>
-            <a href=""  onclick="addCart">
-              <img src="images/icon-cart.svg" alt="" class="cart-imgg"
-            /></a>
-          </div>
+          <div  class="ccc">
+            <a href="">
+              <img src="images/icon-cart.svg" alt=""   class="cart-imgg"
+            /> <span id="count">0</span> </a>
+            </div>
 
-          <div>
+          <div >
             <a href="">
               <img src="images/image-avatar.png" alt="" class="avatar-img" />
             </a>
@@ -88,8 +88,6 @@
         </div>
 
     </div>
-
-
 
 
 
@@ -117,39 +115,69 @@
       </div> 
       
     </div> 
-
-
  
     </header>
 
-    <hr class="hr" />
+    <hr class="hrr" >
+
+
+    <div id="alerts"></div>
+
+    <div class="cart-board" onclick="addToCart()">
+      <div id="cartboardinner">
+        <h4 class="h4-padding">Cart</h4>
+        <hr class="hrr">
+        <div class="img-txt-div">     
+      <img src="images/image-product-1-thumbnail.jpg" alt="" class="cart-imggg">
+
+      <div>
+<!-- 
+      <p>Fall Limited Edition Sneakers</p> -->
+      <p id="carttable"></p>
+      <span id="itemsquantity" onclick="addCart()">0</span>
+       <span><h5 id="total">0</h5></span>
+
+<div class="delete-btn-div"> <a href="">
+      <img src="images/icon-delete.svg" alt="" id="delete-btn">
+    </a>
+    </div>
+
+    </div>
+    </div>
+
+
+      <button class="cart-btn"> <a  style="color: #fff;"   href="">Checkout</a> </button>
+    </div>
+    
+    </div>
+
+
+
+
+
+
 
     <main class="main">
       <div class="main-sub-div">
         <div class="first-main-div">
 
-
-
-
           
       <div class="mySlides">
 
-        <img src="images/image-product-1-thumbnail.jpg"  class="big-shoe  ">
+        <img src="images/image-product-1-thumbnail.jpg"  class="big-shoe "  onclick="press()">
       </div> 
+
    
-      <div class="mySlides">
-      
-        <img src="images/image-product-2-thumbnail.jpg" class="big-shoe  ">
+      <div class="mySlides">  
+        <img src="images/image-product-2-thumbnail.jpg" class="big-shoe " onclick="press()">
       </div>
   
       <div class="mySlides">
-
-        <img src="images/image-product-3-thumbnail.jpg" class="big-shoe  ">
+        <img src="images/image-product-3-thumbnail.jpg" class="big-shoe " onclick="press()">
       </div>
       
       <div class="mySlides">
-       
-        <img src="images/image-product-4-thumbnail.jpg" class="big-shoe  ">
+        <img src="images/image-product-4-thumbnail.jpg" class="big-shoe"  onclick="press()">
       </div>
 
   
@@ -176,9 +204,9 @@
         <div class="second-main-div">
           <h5 class="h55">SNEAKER COMPANY</h5>
 
-          <h1 class="h11">Fall Limited Edition Sneakers</h1>
+          <h1 class="productname">Fall Limited Edition Sneakers</h1>
 
-          <p class="p-p">
+          <p class="p-p">            
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
@@ -201,20 +229,28 @@
               </button>
 
 
-              <h3 id="counting"></h3>
+              <h3 id="counting">0</h3>
 
-              <button onclick="increment()" ><img src="Images/icon-plus.svg" alt="" class="minus">
+              <button onclick="increment()" ><img src="Images/icon-plus.svg" alt="" class="plus">
               </button>
 
 
              
             </div>
-
-            <button onclick="addCart" class="add-to-cart-btn">
+<!-- 
+             <button onclick="addCart()" class="add-to-cart-btn">
               <img src="images/icon-cart-col.svg" alt="" class="last-cart" />
 
               <span>Add to cart</span>
-            </button>
+            </button>  -->
+
+           <button class="add-to-cart-btn">
+              <img src="images/icon-cart-col.svg" alt="" class="last-cart" />
+
+              <span>Add to cart</span>
+            </button> 
+
+
           </div>
         </div>
       </div>
@@ -226,51 +262,81 @@
 
 
 
-
+      
+      <!-- The Modal -->
 
 
 
       <div id="myModal" class="modal">
 
-        <div class="modal-content">  
-  
-  
+        <div class="modal-content"> 
+
+
+
+
+          <div class="mySldes">
+            
         <div class="numbertext">1 / 4</div>
         <img src="images/image-product-1-thumbnail.jpg"  class="big-shoee  ">
+
+      </div>
+
+
     
-    
+         <div class="mySlides">  
         <div class="numbertext">2 / 4</div>
         <img src="images/image-product-2-thumbnail.jpg" class="big-shoee  ">
-     
-  
-    
+
+       </div>
+
+
+       <div class="mySlides">   
+
         <div class="numbertext">3 / 4</div>
         <img src="images/image-product-3-thumbnail.jpg" class="big-shoee  ">
-      
- 
+
+      </div>
+
+      <div class="mySlides">  
+        
         <div class="numbertext">4 / 4</div>
         <img src="images/image-product-4-thumbnail.jpg" class="big-shoee "> 
+
+      </div>
      
 
   
   
        <div class="column">
-        <img class="small-shoes cursor demo " src="images/image-product-1-thumbnail.jpg"  onclick="currentSlide(1)" alt="">
+        <img class="small-shoess cursor demo " src="images/image-product-1-thumbnail.jpg"  onclick="currentSlidee(1)" alt="">        
       </div>
+
       <div class="column">
-        <img class="small-shoes cursor" src="images/image-product-2-thumbnail.jpg"  onclick="currentSlide(2)" alt="">
+        <img class="small-shoess  cursor" src="images/image-product-2-thumbnail.jpg"  onclick="currentSlidee(2)" alt="">
       </div>
+
       <div class="column">
-        <img class="small-shoes cursor" src="images/image-product-3-thumbnail.jpg"  onclick="currentSlide(3)" alt="">
+        <img class="small-shoess cursor" src="images/image-product-3-thumbnail.jpg"  onclick="currentSlidee(3)" alt="">
       </div>
+
       <div class="column">
-        <img class="small-shoes cursor" src="images/image-product-4-thumbnail.jpg"  onclick="currentSlide(4)" alt=""> 
+        <img class="small-shoess cursor" src="images/image-product-4-thumbnail.jpg"  onclick="currentSlidee(4)" alt=""> 
       </div> 
-
-
 
     </div>
      </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

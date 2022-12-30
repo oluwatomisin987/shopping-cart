@@ -75,9 +75,9 @@
 
         <div class="cart-avatar-div">
           <div  class="ccc">
-            <a href="">
+           
               <img src="images/icon-cart.svg" alt=""   class="cart-imgg"
-            /> <span id="count">0</span> </a>
+            /> <span class="count">0</span> 
             </div>
 
           <div >
@@ -121,10 +121,10 @@
     <hr class="hrr" >
 
 
-    <div id="alerts"></div>
+    <!-- <div id="alerts"></div> -->
 
-    <div class="cart-board" onclick="addToCart()">
-      <div id="cartboardinner">
+    <div class="cart-board  hiddenn" >
+      <div class="cartboardinner">
         <h4 class="h4-padding">Cart</h4>
         <hr class="hrr">
         <div class="img-txt-div">     
@@ -133,16 +133,21 @@
       <div>
 <!-- 
       <p>Fall Limited Edition Sneakers</p> -->
-      <p id="carttable"></p>
-      <span id="itemsquantity" onclick="addCart()">0</span>
-       <span><h5 id="total">0</h5></span>
+      <p class="carttable">Fall Limited Version</p>
+      <span class="itemprice">  125</span>
+      <span> * </span>
+    
+      <span class="itemsquantity">0</span>
+       <span><h5 class="total"></h5></span>
+       
+       </div>
 
-<div class="delete-btn-div"> <a href="">
-      <img src="images/icon-delete.svg" alt="" id="delete-btn">
-    </a>
-    </div>
+<button class="delete-btn-div"> 
+      <img src="images/icon-delete.svg" alt="" class="delete-btn">
+    
+    </button>
 
-    </div>
+    
     </div>
 
 
@@ -150,6 +155,56 @@
     </div>
     
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cart-board-empty  hiddenn-empty" >
+   
+      
+
+
+
+ <div class="cartboardinner">
+        <h4 class="h4-padding">Cart</h4>
+        <hr class="hrr">
+        <div class="empty-p-div">     
+   
+      <div>
+
+      <p class="empty-p">Your Cart is Empty.</p>
+   
+       
+       </div>
+
+    </div>
+
+    </div>
+    
+
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -180,6 +235,7 @@
         <img src="images/image-product-4-thumbnail.jpg" class="big-shoe"  onclick="press()">
       </div>
 
+      
   
   
       <div class="column">
@@ -225,13 +281,17 @@
             <div class="plus-minus-div">
 
 
-              <button   onclick="decrement()" ><img src="Images/icon-minus.svg" alt="" class="minus">
+              <!-- onclick="decrement()" -->
+              <!-- onclick="increment()" -->
+
+
+              <button class="minus" ><img src="Images/icon-minus.svg" alt="" >
               </button>
 
 
-              <h3 id="counting">0</h3>
+              <h3 class="counting"></h3>
 
-              <button onclick="increment()" ><img src="Images/icon-plus.svg" alt="" class="plus">
+              <button class="plus" ><img src="Images/icon-plus.svg" alt="" >
               </button>
 
 
@@ -265,13 +325,11 @@
       
       <!-- The Modal -->
 
-
+<!-- 
 
       <div id="myModal" class="modal">
 
         <div class="modal-content"> 
-
-
 
 
           <div class="mySldes">
@@ -324,40 +382,82 @@
       </div> 
 
     </div>
+     </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+      <div id="myModal" class="modal  modal-hidden">
+
+        <div class="modal-content"> 
+
+          <button class="close-modal"><img src="images/icon-close.svg" alt=""></button>
+
+
+          <div class="mySldes">
+            
+        <div class="numbertext">1 / 4</div>
+        <img src="images/image-product-1-thumbnail.jpg"  class="big-shoee  ">
+
+      </div>
+
+
+    
+         <div class="mySlides">  
+          
+        <div class="numbertext">2 / 4</div>
+        <img src="images/image-product-2-thumbnail.jpg" class="big-shoee  ">
+
+       </div>
+
+
+       <div class="mySlides">   
+
+        <div class="numbertext">3 / 4</div>
+        <img src="images/image-product-3-thumbnail.jpg" class="big-shoee  ">
+
+      </div>
+
+      <div class="mySlides">  
+        
+        <div class="numbertext">4 / 4</div>
+        <img src="images/image-product-4-thumbnail.jpg" class="big-shoee "> 
+
+      </div>
+     
+
+  
+  
+       <div class="column">
+        <img class="small-shoess cursor demo " src="images/image-product-1-thumbnail.jpg"  alt="">        
+      </div>
+
+      <div class="column">
+        <img class="small-shoess  cursor" src="images/image-product-2-thumbnail.jpg"   alt="">
+      </div>
+
+      <div class="column">
+        <img class="small-shoess cursor" src="images/image-product-3-thumbnail.jpg"   alt="">
+      </div>
+
+      <div class="column">
+        <img class="small-shoess cursor" src="images/image-product-4-thumbnail.jpg"   alt=""> 
+      </div> 
+
+    </div>
      </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
 
 
 
@@ -365,152 +465,8 @@
 
     </main>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- modal starts here -->
-
-
-
-<!-- <div id="myModal" class="modal">
-  <span class="close"><img src="images/icon-close.svg" alt=""></span>
-
-
- <div  class="modal-content"                   id="img01">     
-
-  <div> 
-
-  
-  <div class="prev-nxt-div">          
-<img src="images/icon-previous.svg" alt="" class="prevv">
-<img src="images/icon-next.svg" alt="" class="nxxt">
-</div>
-
-
-  <img src="images/image-product-1.jpg" class="b-shoe">
- class="s-shoe-div">   
-  
-  <div class="mySlides">    
-    <div class="number-text">1 / 4</div> 
- <img src="images/image-product-1-thumbnail.jpg" alt="" class="s-shoe">
-</div>
-
-
-<div class="mySlides">   
-  <div class="number-text"> 2 / 4</div>        
- <img src="images/image-product-2-thumbnail.jpg" alt="" class="s-shoe">
-</div>
-
-<div class="mySlides">
-  <div class="number-text"> 3 / 4</div>        
- <img src="images/image-product-3-thumbnail.jpg" alt="" class="s-shoe">
-</div>
-
-
-<div class="mySlides">        
-  <div class="number-text">4 / 4</div>
- <img src="images/image-product-4-thumbnail.jpg" alt="" class="s-shoe">
-</div>
-
-
-
-</div>
-</div>
- 
-
-
-<img src="images/icon-previous.svg" alt="">
-
-<img src="images/icon-next.svg" alt="">
-
-
-
-
-
-
-
-   <div class="column">
-<img class="demo cursor" src="images/image-product-1-thumbnail.jpg" alt="" style="width: 50%;">
-  </div>
-
-  <div class="column">
-<img  class="demo cursor" src="images/image-product-2-thumbnail.jpg" alt="" style="width: 50%;">
-  </div>
-
-  <div class="column">
-<img class="demo cursor" src="images/image-product-3-thumbnail.jpg" alt=""style="width: 50%;">
-  </div>
-
-
-  <div class="column">
-<img  class="demo cursor" src="images/image-product-4-thumbnail.jpg" alt=""style="width: 50%;">
-  </div> 
-
-
-
-  
-
- 
-
-
-</div> 
-
- -->
-
-
-
+    <div class="overlay overlay-hidden"></div>
 
 
 
@@ -525,9 +481,6 @@
 
 
     <script src="script.js"></script>
-
-
-
   </body>
 </html>
 
@@ -547,76 +500,17 @@
 
 
 
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
 
 
 
 
 
-
-
-          <!-- <div class="row">
-            <div class="column">
-              <img src="images/image-product-1-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-            
-            </div>
-            <div class="column">
-              <img src="images/image-product-2-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-            </div>
-            <div class="column">
-              <img src="images/image-product-3-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(3)" classs="hover-shadow cursor">
-            </div>
-            <div class="column">
-              <img src="images/image-product-4-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-            </div>
-          </div> -->
-          
-<!--           
-          <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-          
-              <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="images/image-product-1-thumbnail.jpg" style="width:100%">
-              </div>
-          
-              <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/image-product-2-thumbnail.jpg" style="width:100%">
-              </div>
-          
-              <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="images/image-product-3-thumbnail.jpg" style="width:100%">
-              </div>
-              
-              <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="images/image-product-4-thumbnail.jpg" style="width:100%">
-              </div>
-              
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
-              <div class="caption-container">
-                <p id="caption"></p>
-              </div>
-          
-          
-              <div class="column">
-                <img class="demo cursor" src="image-product-1-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="image-product-2-thumbnail.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="image-product-3-thumbnail.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="image-product-4-thumbnail.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-              </div>
-            </div>
-          </div> -->
 
 
 

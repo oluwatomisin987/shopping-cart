@@ -129,7 +129,7 @@
 
 .main{
   /* border: 3px solid black; */
-  z-index: 0;
+  /* z-index: 0; */
   /* background: red; */
   width: 87%;
   position: absolute;
@@ -309,19 +309,7 @@ border: none;
 
 /* modal starts here */
 
-/* 
-.modal {
-  display: none;
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 90px; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.9);
-} */
+
 
 .modal{
   position: absolute;
@@ -333,14 +321,19 @@ border: none;
     position: fixed;  */
   z-index: 10; 
   /* padding-top: 90px;  */
-  left: 30%;
-  top: -2%;
+  left: 55%;
+  top: 50%;
   width: 45%; 
+  
+    transform: translate(-50%, -50%);
+   /* background-color: rgba(0, 0, 0, 0.3); */
   /* height: 20%; */
   /* margin: auto; */
   /* height: 100%;  */
   /* overflow: auto;  */
   /* background-color: rgba(0,0,0,0.9); */
+
+  
 }
 
 
@@ -348,20 +341,15 @@ border: none;
   position: absolute;
   top: 0;
   left: 0;
-  
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
   z-index: 5;
 }
 
-.overlay-hidden{
-  display: none;
-}
 
-
-.modal-hidden{
+.hidden{
   display: none;
 }
 
@@ -377,15 +365,29 @@ border: none;
 }
 
 
-.modal-content {
-  /* border: 4px solid yellow; */
-  /* margin: auto; */
-  /* display: block; */
-  /* right: -50%; */
-  /* width: 80%; */
-  /* padding-left: 330px; */
-  /* max-width: 500px; */
+
+.prev-btn{
+  border-radius: 20px;
+  position: absolute;
+  top: 199px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  cursor: pointer;
+  border: none;
 }
+
+.next-btn{
+  position: absolute;
+  border-radius: 20px;
+  border: none;
+  left: 370px;
+  top: 180px;
+  padding: 10px;
+   cursor: pointer;
+}
+
+
+
 
 .b-shoe{
   /* width: 55%; */
@@ -444,7 +446,7 @@ margin-right: 10px;
 /* padding-right: 30px; */
 }
 
-.prevv{
+/* .prevv{
   border-radius: 100%;
   background: white;
   padding: 10px;
@@ -454,7 +456,7 @@ margin-right: 10px;
   border-radius: 100%;
   background: white;
   padding: 10px;
-}
+} */
 
 
 
@@ -516,6 +518,8 @@ margin-right: 10px;
   width: 25%;
 
 } 
+
+
 
 .hiddenn{
   

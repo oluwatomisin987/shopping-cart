@@ -16,22 +16,53 @@ function closeNav() {
 
 
 
+// modal
+const modal = document.querySelector(".modal");
+
+const btnOpenModal = document.querySelectorAll('.big-shoe')
+
+const btnCloseModal = document.querySelector(".close-modal");
+
+const overLay = document.querySelector(".overlay");
+
+// const smallShoes = Document.querySelectorAll('.small-shoess');
+
+// const prev = document.querySelector('.prev-btn');
+
+// const next = document.querySelector('.next-btn');
 
 
-modal
-
-var modal = document.getElementById("myModal");
-
-
-var img = document.getElementsByClassName("big-shoe");
-var modalImg = document.getElementsByClassName("big-shoee");
 
 
 
- function  press (){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-}
+for (let i = 0; i < btnOpenModal.length; i++)
+  btnOpenModal[i].addEventListener("click", function(){
+modal.classList.remove('hidden')
+overLay.classList.remove('hidden')
+  });
+
+
+  btnCloseModal.addEventListener ('click', function (){
+    modal.classList.add('hidden')
+    overLay.classList.add ('hidden')
+    
+  })
+
+
+
+
+
+
+
+
+  // for (let i = 0; i < smallShoes.length; i++)
+  //   next[i].addEventListener('click', function(){
+
+
+  //   })
+
+
+
 
 
 
@@ -59,21 +90,19 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+
 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
   slides[slideIndex-1].style.display = "block";
 
 }
-
-
 
 
 

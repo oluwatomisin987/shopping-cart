@@ -714,15 +714,21 @@ display: none;
 
 width: 20%;
   /* height: 15%; */
-  background-color: white;
+  background:white;
+  border: none;
 }
 
 .plus{
   width: 20%;
-  background-color: white;
+  background:white;
   /* height: 35%; */
+  border: none;
   }
 
+.svg{
+width: 70%;
+}
+    
 
 
 

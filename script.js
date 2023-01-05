@@ -25,11 +25,11 @@ const btnCloseModal = document.querySelector(".close-modal");
 
 const overLay = document.querySelector(".overlay");
 
-// const smallShoes = Document.querySelectorAll('.small-shoess');
+// const smallShoes = Document.querySelector('.small-shoess');
 
-// const prev = document.querySelector('.prev-btn');
+const prev = document.querySelector('.prev-btn');
 
-// const next = document.querySelector('.next-btn');
+const next = document.querySelector('.next-btn');
 
 
 
@@ -79,9 +79,9 @@ overLay.classList.remove('hidden')
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// // }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -97,9 +97,7 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  // for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  // }
+
   slides[slideIndex-1].style.display = "block";
 
 }
@@ -116,6 +114,45 @@ function showSlides(n) {
 
 
 
+
+
+      // LIGHTBOX
+
+
+
+var slideIndexx = 1;
+showSlidess(slideIndexx);
+
+// function plusSlidess(n) {
+//   showSlidess((slideIndexx += n));
+// }
+// prev and next ctlr
+function plusSlidess(n){
+  showSlidess (slideIndexx +=n);
+
+}
+
+function currentSlidee(n) {
+  showSlidess((slideIndexx = n));
+}
+
+function showSlidess(n) {
+  var p;
+  var slidess = document.getElementsByClassName("mySlidess");
+
+  if (n > slidess.length) {
+    slideIndexx = 1;
+  }
+  if (n < 1) {
+    slideIndexx = slidess.length;
+  }
+  for (p = 0; p < slidess.length; p++) {
+    slidess[p].style.display = "none";
+  }
+  // dots[p].className.repla
+
+  slidess[slideIndexx - 1].style.display = "block";
+}
 
 
 
@@ -309,9 +346,7 @@ document.querySelector ('.cart-imgg').addEventListener ('click',  function() {
 
  cartboard.style.display = "block";
   }
- }   );
-
-
+ }   )
 
 
  document.querySelector ('.delete-btn').addEventListener ('click', function(){
@@ -325,3 +360,42 @@ document.querySelector ('.cart-imgg').addEventListener ('click',  function() {
 
 
  }) 
+
+
+
+
+
+
+
+//  mobile shoes
+
+
+
+var sslideIndex = 7;
+sshowSlides(sslideIndex);
+
+ function pplusSlides(n) {
+   showSlides(slideIndex += n);
+}
+
+function ccurrentSlide(n) {
+  sshowSlides((sslideIndex = n));
+}
+
+function sshowSlides(n) {
+  var a;
+  var sslides = document.getElementsByClassName("mySlid");
+
+  if (a > sslides.length) {
+    sslideIndex = 1;
+  }
+  if (a < 1) {
+    sslideIndex = sslides.length;
+  }
+  for (a = 0; a < sslides.length; a++) {
+    sslides[a].style.display = "none";
+  }
+
+  // sslides[slideIndex - 1].style.display = "block";
+}
+

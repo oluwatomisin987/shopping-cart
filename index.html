@@ -213,9 +213,93 @@
 
 
     <main class="main">
+
+
+
+
       <div class="main-sub-div">
         <div class="first-main-div">
 
+
+
+
+
+<div class="mobile">
+
+<div class="slideshow-container">
+
+<!-- <img src="images/image-product-1-thumbnail.jpg" alt=""> -->
+
+  <div class="mySlid fade">
+
+    <div>
+      <img src="images/image-product-1-thumbnail.jpg" alt="">
+    </div>
+
+    <div>
+      <img src="images/image-product-2-thumbnail.jpg" alt="">
+    </div>
+
+    
+    <div>
+      <img src="images/image-product-3-thumbnail.jpg" alt="">
+    </div>
+
+    
+    <div>
+      <img src="images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+
+  </div>
+
+  <button class="pre" onclick="pplusSlides(-1)" ><img src="images/icon-previous.svg" alt=""></button>
+
+  <button class="nex"   onclick="pplusSlides(1)"><img src="images/icon-next.svg" alt=""></button>
+
+  
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="kkk">  
           
       <div class="mySlides">
 
@@ -252,6 +336,7 @@
       </div> 
 
 
+        </div>
         </div>
 
 
@@ -297,12 +382,6 @@
 
              
             </div>
-<!-- 
-             <button onclick="addCart()" class="add-to-cart-btn">
-              <img src="images/icon-cart-col.svg" alt="" class="last-cart" />
-
-              <span>Add to cart</span>
-            </button>  -->
 
            <button class="add-to-cart-btn">
               <img src="images/icon-cart-col.svg" alt="" class="last-cart" />
@@ -322,78 +401,12 @@
 
 
 
-      
-      <!-- The Modal -->
-
-<!-- 
-
-      <div id="myModal" class="modal">
-
-        <div class="modal-content"> 
-
-
-          <div class="mySldes">
-            
-        <div class="numbertext">1 / 4</div>
-        <img src="images/image-product-1-thumbnail.jpg"  class="big-shoee  ">
-
-      </div>
-
-
-    
-         <div class="mySlides">  
-        <div class="numbertext">2 / 4</div>
-        <img src="images/image-product-2-thumbnail.jpg" class="big-shoee  ">
-
-       </div>
-
-
-       <div class="mySlides">   
-
-        <div class="numbertext">3 / 4</div>
-        <img src="images/image-product-3-thumbnail.jpg" class="big-shoee  ">
-
-      </div>
-
-      <div class="mySlides">  
-        
-        <div class="numbertext">4 / 4</div>
-        <img src="images/image-product-4-thumbnail.jpg" class="big-shoee "> 
-
-      </div>
-     
-
-  
-  
-       <div class="column">
-        <img class="small-shoess cursor demo " src="images/image-product-1-thumbnail.jpg"  onclick="currentSlidee(1)" alt="">        
-      </div>
-
-      <div class="column">
-        <img class="small-shoess  cursor" src="images/image-product-2-thumbnail.jpg"  onclick="currentSlidee(2)" alt="">
-      </div>
-
-      <div class="column">
-        <img class="small-shoess cursor" src="images/image-product-3-thumbnail.jpg"  onclick="currentSlidee(3)" alt="">
-      </div>
-
-      <div class="column">
-        <img class="small-shoess cursor" src="images/image-product-4-thumbnail.jpg"  onclick="currentSlidee(4)" alt=""> 
-      </div> 
-
-    </div>
-     </div> -->
 
 
 
 
-
-
-
-
-
-
-
+ 
+         <!-- MODAL -->
 
       <div class="modal  hidden">
 
@@ -402,13 +415,13 @@
           <button class="close-modal"><img src="images/icon-close.svg" alt=""></button>
 
       
-          <button class="prev-btn"><img src="images/icon-previous.svg" alt=""></button>
+          <button class="prev-btn" onclick="plusSlidess(-1)"><img src="images/icon-previous.svg" alt=""></button>
 
-            <button class="next-btn"><img src="images/icon-next.svg" alt=""></button>
+            <button class="next-btn" onclick="plusSlidess(1)" ><img src="images/icon-next.svg" alt=""></button>
             
 
 
-          <div class="mySldes">
+          <div class="mySlidess">
             
         <div class="numbertext">1 / 4</div>
         <img src="images/image-product-1-thumbnail.jpg"  class="big-shoee  ">
@@ -417,7 +430,7 @@
 
 
     
-         <div class="mySlides">  
+         <div class="mySlidess">  
           
         <div class="numbertext">2 / 4</div>
         <img src="images/image-product-2-thumbnail.jpg" class="big-shoee  ">
@@ -425,14 +438,14 @@
        </div>
 
 
-       <div class="mySlides">   
+       <div class="mySlidess">   
 
         <div class="numbertext">3 / 4</div>
         <img src="images/image-product-3-thumbnail.jpg" class="big-shoee  ">
 
       </div>
 
-      <div class="mySlides">  
+      <div class="mySlidess">  
         
         <div class="numbertext">4 / 4</div>
         <img src="images/image-product-4-thumbnail.jpg" class="big-shoee "> 
@@ -443,23 +456,23 @@
     
        <div class="column">
         <img class="small-shoes cursor demo " src="images/image-product-1-thumbnail.jpg" 
-         
+          onclick="currentSlidee(1)"
          alt="">        
        
       </div>
 
       <div class="column">
-        <img class="small-shoess  cursor" src="images/image-product-2-thumbnail.jpg" "  alt="">
+        <img class="small-shoess  cursor" src="images/image-product-2-thumbnail.jpg"   onclick="currentSlidee(2)"  alt="">
       
       </div>
 
       <div class="column">
         <img class="small-shoess cursor" src="images/image-product-3-thumbnail.jpg" 
-           alt="">
+           onclick="currentSlidee(3)"   alt="">
       </div>
 
       <div class="column">
-        <img class="small-shoess cursor" src="images/image-product-4-thumbnail.jpg" " alt=""> 
+        <img class="small-shoess cursor" src="images/image-product-4-thumbnail.jpg"   onclick="currentSlidee(4)" alt=""> 
       </div> 
 
     </div>
@@ -473,18 +486,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
 
     <div class="overlay hidden"></div>
-
-
-
-
-
-
-
-
 
 
 

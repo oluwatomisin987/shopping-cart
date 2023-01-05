@@ -309,8 +309,6 @@ border: none;
 
 /* modal starts here */
 
-
-
 .modal{
   position: absolute;
   z-index: 10; 
@@ -670,6 +668,54 @@ display: none;
 
 @media (max-width: 420px) {
 
+
+.cart-board-empty{
+  /* border: 4px solid red; */
+  background-color: white;
+  border-radius: 6px;
+  justify-content: center;
+  /* z-index: 1; */
+  position: absolute;
+  width: 95%;
+  height: 30%;
+  right: 0;
+  left: 0;
+  box-shadow: none;
+  /* margin-top: 30px; */
+  /* margin-left: 20px; */
+  margin: auto;
+}
+
+.cartboardinner{
+  /* border: 1px solid blue; */
+  width: 100%;
+  /* padding: 10px; */
+}
+
+
+.cart-board{
+  /* border: 4px solid red; */
+  background-color: white;
+  border-radius: 6px;
+  justify-content: right;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 31%;
+  right: 0%;
+  left: 0%;
+  box-shadow: none;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
   .body{
     background: #fff;
     width: 100%;
@@ -774,15 +820,13 @@ display: none;
     width: 100%;
     margin:  auto;
     padding: 0px;
+    position: absolute;
   } 
   
   .main-sub-div{
     display: flex;
     flex-direction: column;
     padding: 0px;
-    /* justify-content:space-between; */
-    /* padding: 10px; */
-    /* align-items: center; */
   }
 
   .first-main-div{
@@ -794,13 +838,15 @@ display: none;
     display: none;
   }
 
-  .mobile{
+.mobile{
     display: block;
-    border: 4px solid grey;
-  }
+    /* border: 4px solid grey; */
+}
+
+
 
 .slideshow-container{
-border: 4px solid red;
+/* border: 4px solid red; */
 position: relative;
 margin: auto;
 width: 100%;
@@ -808,7 +854,11 @@ width: 100%;
 
 .mySlid{
   display: none;
-  border: 6px dotted yellow;
+  /* border: 6px dotted yellow; */
+}
+
+.ooo{
+  width: 100%;
 }
 
 

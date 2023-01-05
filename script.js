@@ -371,11 +371,11 @@ document.querySelector ('.cart-imgg').addEventListener ('click',  function() {
 
 
 
-var sslideIndex = 7;
+var sslideIndex = 1;
 sshowSlides(sslideIndex);
 
  function pplusSlides(n) {
-   showSlides(slideIndex += n);
+   sshowSlides(slideIndex += n);
 }
 
 function ccurrentSlide(n) {
@@ -396,6 +396,6 @@ function sshowSlides(n) {
     sslides[a].style.display = "none";
   }
 
-  // sslides[slideIndex - 1].style.display = "block";
+  sslides[slideIndex - 1].style.display = "block";
 }
 

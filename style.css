@@ -682,6 +682,7 @@ display: none;
   height: 30%;
   right: 0;
   left: 0;
+  /* z-index: 2; */
   box-shadow: none;
   /* margin-top: 30px; */
   /* margin-left: 20px; */
@@ -701,13 +702,15 @@ display: none;
   border-radius: 6px;
   justify-content: right;
   z-index: 1;
+  padding-top: 25px;
   position: absolute;
   width: 100%;
-  height: 31%;
+  height: 40%;
   right: 0%;
   left: 0%;
   box-shadow: none;
-  margin: auto;
+  margin-top: 30px;
+  /* margin: auto; */
 }
 
  .minus{
@@ -998,7 +1001,7 @@ width: 100%;
   height: 100%; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 4; /* Stay on top */
   top: 0;
   /* left: 0; */
   background-color: #fff; 

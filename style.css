@@ -712,14 +712,14 @@ display: none;
 
  .minus{
 
-width: 20%;
+/* width: 20%; */
   /* height: 15%; */
   background:white;
   border: none;
 }
 
 .plus{
-  width: 20%;
+  /* width: 10%; */
   background:white;
   /* height: 35%; */
   border: none;
